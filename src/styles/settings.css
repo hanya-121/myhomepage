@@ -1,0 +1,108 @@
+@charset "UTF-8";
+/**
+ * src/styles/settings.scss
+ *
+ * Configures SASS variables and Vuetify overwrites
+ */
+@font-face {
+  font-family: "Paperlogy-8ExtraBold";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-8ExtraBold.woff2") format("woff2");
+  font-weight: 800;
+  font-style: normal;
+}
+.sec1, .sec2, .sec3, .sec4, .sec5 {
+  font-family: "Paperlogy-4Regular";
+  max-width: 90%;
+  margin-bottom: 130px;
+}
+
+.title {
+  font-family: "Paperlogy-8ExtraBold";
+  font-size: 54px;
+  font-weight: 800;
+  margin-bottom: 40px;
+  margin-left: 70px;
+}
+
+/* 어바웃 ------------------------------------------ */
+.sec2 {
+  background: #f9f6f3;
+}
+.sec2 .about_content {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.sec2 .about_content .sec2_title {
+  margin-left: -350px !important;
+}
+.sec2 .about_imgbox {
+  display: flex;
+  justify-content: center;
+  padding: 0 100px 20px 16px;
+}
+.sec2 .about_imgbox .myphoto {
+  border-radius: 16px;
+  max-width: 385px;
+  height: auto;
+}
+.sec2 .about_text {
+  padding: 16px;
+}
+.sec2 .about_text .about_sub {
+  font-size: 22px;
+  font-weight: 600;
+  color: #0074D0;
+  margin-bottom: 20px;
+}
+.sec2 .about_text p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 12px;
+  color: #444;
+}
+
+/* 스킬 ------------------------------------------ */
+.sec3 {
+  padding: 60px 16px;
+}
+.sec3 .skill_card {
+  text-align: center;
+  max-width: 380px;
+}
+.sec3 .skill_card .tool-name {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 0px;
+}
+.sec3 .skill_card .tool-desc {
+  font-size: 16px !important;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+/* 프로젝트 ------------------------------------------ */
+.project-section {
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+}
+
+.project-card {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  max-width: 500px;
+  border: 1px solid #e6e6e6;
+}
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.project_card_title {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.project_card_text {
+  font-size: 16px;
+  color: #555;
+}/*# sourceMappingURL=settings.css.map */
