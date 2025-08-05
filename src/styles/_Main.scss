@@ -1,0 +1,215 @@
+
+
+.sec2, .sec3, .sec4, .sec5 {
+  font-family: 'Paperlogy-4Regular';
+  margin-bottom: 130px;
+}
+
+.title {
+  font-family: 'Paperlogy-8ExtraBold';
+  //font-size: 54px;
+  font-size: clamp(34px, 5vw, 54px);
+  font-weight: 800;
+  margin-bottom: 40px;
+  margin-left: 70px;
+  max-width: 85%;
+}
+
+
+.sec1 {
+  height: 0px;
+}
+
+/* 어바웃 ------------------------------------------ */
+.sec2 {
+  background: #f3f8f9;
+
+  .about_imgbox {
+    display: flex;
+    justify-content: center;
+    //padding: 0 100px 20px 16px;
+    //border: 1px solid;
+    
+    .myphoto {
+      border-radius: 16px;
+      max-width: 385px;
+      height: auto;
+      margin-left: 230px;
+    }
+  }
+
+  .about_text {
+    padding: 16px 16px 16px 130px;
+
+    .about_sub {
+      font-size: 24px;
+      font-weight: 600;
+      color: #0074D0;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.6;
+      margin-bottom: 12px;
+      color: #444;
+    }
+  }
+}
+
+
+
+/* 스킬 ------------------------------------------ */
+.sec3{
+  //background: #f9f9f9;
+  padding: 60px 16px;
+
+  .skill_card {
+    text-align: center;
+    max-width: 380px;
+    .tool-name {
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 0px;
+    }
+
+    .tool-desc {
+      font-size: 16px !important;
+      color: #555;
+       margin-bottom: 10px;
+    }
+  }
+}
+
+
+
+/* 프로젝트 ------------------------------------------ */
+.project-section {
+  background-color: #f9f9f9;
+}
+
+.project-card {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  border: 1px solid #e6e6e6;
+
+  &:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+}
+
+.project_card_title {
+  font-size: 20px;
+  font-weight: 600;
+}
+.project_card_text {
+  font-size: 16px;
+    color: #555;
+}
+
+
+/* 컨텍 ------------------------------------------ */
+.sec5 {
+  height: 300px;
+
+  .contact_box{
+    max-width: 85%;
+    .contact_text {
+      font-size: 25px;
+      margin-bottom: 20px;
+      padding-left: 30px;
+    }
+  }
+  .icon {
+      max-width: 83%;
+    }
+
+}
+
+
+
+
+/* 미디어쿼리 ------------------------------------------ */
+@media (max-width: 1264px) {
+  .title {
+    font-size: 42px;
+    margin-left: 40px;
+  }
+  .about_text {
+    padding-left: 40px !important;
+  }
+}
+
+@media (max-width: 960px) {
+  .title {
+    font-size: 36px;
+    margin-left: 20px;
+  }
+
+  .about_imgbox {
+    margin-left: 0 !important;
+    .myphoto {
+      margin-left: 0 !important;
+      max-width: 100%;
+    }
+  }
+
+  .about_text {
+    padding: 16px !important;
+    text-align: center;
+
+    .about_sub {
+      font-size: 20px;
+    }
+
+    p {
+      font-size: 16px;
+    }
+  }
+
+  .contact_text {
+    font-size: 20px !important;
+    text-align: center;
+    padding: 0 !important;
+  }
+
+  .icon {
+    justify-content: center !important;
+    gap: 30px !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .title {
+    font-size: 28px;
+    margin-left: 10px;
+  }
+
+  .skill_card {
+    .tool-name {
+      font-size: 18px;
+    }
+
+    .tool-desc {
+      font-size: 14px !important;
+    }
+  }
+
+  .project_card_title {
+    font-size: 18px;
+  }
+
+  .project_card_text {
+    font-size: 14px;
+  }
+
+  .contact_text {
+    font-size: 18px;
+  }
+
+  .v-icon {
+    padding: 20px !important;
+    font-size: 28px !important;
+  }
+}
